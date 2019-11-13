@@ -44,7 +44,10 @@ public class BoardTest {
         }
         System.out.println(clonedBoard);
         //When
+        board.getLists().remove(listToDo);
         //Then
-        Assert.assertEquals(3, board.getLists().size());
+        Assert.assertEquals(2, board.getLists().size());
+        Assert.assertEquals(2, clonedBoard.getLists().size());
+
     }
 }

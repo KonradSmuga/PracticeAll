@@ -13,7 +13,7 @@ import java.util.Set;
 public class Board extends Prototype {
 
     private String name;
-    final private Set<TaskList> lists = new HashSet<>();
+    private Set<TaskList> lists = new HashSet<>();
 
     public Board(String name) {
         this.name = name;
@@ -40,7 +40,12 @@ public class Board extends Prototype {
     public Board shallowCopy() throws CloneNotSupportedException {
         return (Board) super.clone();
     }
-
 }
+//
+//    public Board deepCopy() throws CloneNotSupportedException {
+//        Board cloneBoard = (Board)super.clone();
+//        cloneBoard.lists = new HashSet<>();
+//    }
+//}
 
 
