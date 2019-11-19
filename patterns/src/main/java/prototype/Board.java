@@ -1,15 +1,14 @@
 package prototype;
 
 
-import lombok.Getter;
-import lombok.Setter;
+
+
 
 import java.util.HashSet;
 import java.util.Set;
 
 
-@Getter
-@Setter
+
 public class Board extends Prototype {
 
     private String name;
@@ -39,6 +38,14 @@ public class Board extends Prototype {
 
     public Board shallowCopy() throws CloneNotSupportedException {
         return (Board) super.clone();
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setLists(Set<TaskList> lists) {
+        this.lists = lists;
     }
 }
 //

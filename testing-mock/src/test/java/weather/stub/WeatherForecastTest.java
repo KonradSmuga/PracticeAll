@@ -17,7 +17,7 @@ public class WeatherForecastTest {
         int quantityOfSensors = weatherForecast.calculateForecast().size();
 
         //Then
-        Assert.assertEquals(5, quantityOfSensors);
+        Assert.assertEquals(4, quantityOfSensors);
     }
 }
 

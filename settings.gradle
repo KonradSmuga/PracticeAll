@@ -2,4 +2,5 @@ rootProject.name = 'practice'
 include 'patterns'
 include 'singletasks'
 include 'testing-mock'
+include 'stream'
 
